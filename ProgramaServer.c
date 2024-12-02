@@ -30,16 +30,16 @@ void control(int stock) {
 
         // Dependiendo del comando, el servidor enviara el mensaje
         if (strcmp(buffer, "play") == 0) {
-            send(stock, "El video se está reproduciendo", 13, 0);
+            send(stock, "El video se está reproduciendo", strlen("El video se está reproduciendo"), 0);
         } else if (strcmp(buffer, "pause") == 0) {
-            send(stock, "El video está pausado", 7, 0);
+            send(stock, "El video está pausado", strlen("El video está pausado"), 0);
         } else if (strcmp(buffer, "stop") == 0) {
-            send(stock, "El video se ha detenido", 8, 0);
+            send(stock, "El video se ha detenido", strlen("El video se ha detenido"), 0);
         } else if (strncmp(buffer, "bitrate", 7) == 0) {
             // El bitrate es fundamental en la transmisión de video para equilibrar entre calidad de imagen y ancho de banda
-            send(stock, "La cantidad de datos (bitrate) ha cambiado", 16, 0);
+            send(stock, "La cantidad de datos (bitrate) ha cambiado", strlen("La cantidad de datos (bitrate) ha cambiado"), 0);
         } else {
-            send(stock, "El comando no es válido", 18, 0);
+            send(stock, "El comando no es válido", strlen("El comando no es válido"), 0);
         }
     }
     close(stock);

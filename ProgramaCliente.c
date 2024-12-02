@@ -19,7 +19,8 @@ void cliente(int s) {
     int n;
     while (1) {
         //
-        printf("Escribir un comando (play | stop | pause | bitrate): ");
+        printf("¡Bienvenido a RedFlix!\n");
+        printf("Escribe un comando (play | stop | pause | bitrate): ");
         fgets(buffer, bufferTam, stdin);
         buffer[strcspn(buffer, "\n")] = 0;
 

@@ -5,10 +5,10 @@ TARGETS = server client
 all: $(TARGETS)
 
 server: ProgramaServer.c ProgStreamer.o ProgEncoder.o
-	$(CC) $(CFLAGS) ProgramaServer.c ProgStreamer.o ProgEncoder.o -o server
+	$(CC) $(CFLAGS) ProgramaServer.c ProgStreamer.o ProgEncoder.o -o servidor
 
 client: ProgramaCliente.c
-	$(CC) $(CFLAGS) ProgramaCliente.c -o client
+	$(CC) $(CFLAGS) ProgramaCliente.c -o cliente
 
 ProgStreamer.o: ProgStreamer.c ProgStreamer.h
 	$(CC) $(CFLAGS) -c ProgStreamer.c -o ProgStreamer.o

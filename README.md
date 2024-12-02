@@ -29,13 +29,13 @@ El sistema permite conectar múltiples clientes a un servidor central. Cada clie
 1. Iniciar el Servidor
    Ejecuta el servidor antes de iniciar los clientes en una terminal:
    ```
-   ./server
+   ./servidor
    ```
 
 2. Iniciar un Cliente
    Ejecuta un cliente en una terminal diferente para conectarte al servidor:
    ```
-   ./client
+   ./cliente
    ```
 
 3. Comandos del Cliente
